@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 export class PlanetService {
   constructor(private _http: HttpClient) {}
 
+  //TODO: Should be implemented with reply and behaviour subjects
   getValues() {
     const url = 'https://planets-by-api-ninjas.p.rapidapi.com/v1/planets';
     return this._http
